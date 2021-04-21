@@ -1,0 +1,38 @@
+.header {
+	position: absolute;
+	top: 38px;
+	left: 0;
+	right: 0;
+}
+
+.header-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navigation{
+	padding-left: 190px;
+}
+
+.menu {
+	display: flex;
+}
+
+.navigation__item a {
+	color:$font_color;
+	font-size: 16px;
+	padding-right: 30px;
+}
+
+.navigation__item a:hover {
+	color:$activ_color;
+}
+
+.search {
+	width: 70px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
