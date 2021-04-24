@@ -1,24 +1,25 @@
 
 $(document).ready(function() {
-	// $('body').hide()
 
 
-const swiper = new Swiper('.main-slider', {
-  // Optional parameters
-  loop: true,
-  autoplay: {
-  	delay: 3000
-  },
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+  const swiper = new Swiper('.main-slider', {
+    // Optional parameters
+    loop: true,
+    autoplay: {
+    	delay: 3000
+    },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.slider__prev',
-    prevEl: '.slider__next',
-  },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.slider__prev',
+      prevEl: '.slider__next',
+    },
 
-});
+  });
+
+  $(".projects__tabs").tabs();
 })
