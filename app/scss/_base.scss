@@ -7,7 +7,7 @@
 }
 
 body {
-  font: 300 16px/1/2 "Montserrat", Raleway, verdana, sans-serif;
+  font: 300 16px Montserrat, Raleway, verdana, sans-serif;
   color: $font_color;
 }
 
@@ -39,4 +39,17 @@ input {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  &--25 {
+    width: calc(25% - 15px);
+    flex-shrink: 0;
+  }
 }
