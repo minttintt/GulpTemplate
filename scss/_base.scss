@@ -53,3 +53,40 @@ input {
     flex-shrink: 0;
   }
 }
+
+.title-30 {
+  font-size: 30px;
+  font-weight: 600;
+  color: $dark;
+  text-align: center;
+  margin: 0 0 25px;
+
+   &--left {
+    @extend .title-30;
+    text-align: left;
+    }
+
+    &--white {
+      @extend .title-30;
+      color: $white;
+      font-weight: 500;
+    }
+}
+
+.text {
+  color: $light-gray;
+  text-align: center;
+  max-width: 770px;
+  margin: 0 auto 35px;
+
+  &--white {
+    @extend .text;
+    color: $white;
+    max-width: 570px;
+  }
+
+  &--left {
+    text-align: left;
+    max-width: 670px;
+  }
+}
