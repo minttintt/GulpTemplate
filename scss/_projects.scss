@@ -2,6 +2,84 @@
 	padding: 75px 0 80px;
 
 	&__tabs {
-		
+
 	}
 }
+
+.tabs__caption {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.projects__tabs a {
+	font: 400 14px Myriad Pro, sans-serif;
+	color: $light-gray;
+	padding: 10px 26px;
+	cursor: pointer;
+	border: 1px solid #ebebeb;
+	border-radius: 5px;
+}
+
+.projects__tabs a:active {
+	color: $white;
+	background-color: $button_color;
+}
+
+.projects__img {
+	margin-top: 30px;
+	padding-bottom: 0;
+	display: block;
+}
+
+.projects__img img {
+	display: block;
+}
+
+.projects__p {
+	padding: 0 0 28px 28px;
+	position: relative;
+}
+
+.projects__title {
+	font: 500 20px Raleway, sans-serif;
+    color: $brown;
+    padding: 28px 0 14px 0;
+}
+
+.projects__text {
+	font: 400 14px "Myriad Pro", sans-serif;
+    color: $light;
+}
+
+.projects .col--33 {
+	&:hover {
+	cursor: default;
+
+		.projects__p {
+			background-color: #362f2d;
+		}
+
+		.projects__img {
+			color: rgba(0%, 0%, 0%, 1);
+		}
+	}
+}
+
+.projects__button {
+	display: flex;
+	justify-content: center;
+}
+
+.projects__button input {
+  font-size: 14px;
+  font-weight: 700;
+  font-style: Raleway;
+  text-align: center;
+  color:$white;
+  background-color:$button_color;
+  height: 52px;
+  width: 172px;
+  border-radius: 6px;
+}
+

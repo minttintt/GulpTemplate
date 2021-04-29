@@ -22,4 +22,20 @@ $(document).ready(function() {
   });
 
   $(".projects__tabs").tabs();
+
+  const playButton =$("#video__play");
+  const content = $('.video__content')
+playButton.on("click", function() {
+  if (video.paused == true) {
+    // Play the video
+    video.play();
+    content.addClass('hidden')
+
+  } else {
+    // Pause the video
+    video.pause();
+     content.removeClass('hidden')
+  }
+});
+
 })
