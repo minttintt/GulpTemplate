@@ -7,7 +7,7 @@
 }
 
 body {
-  font: 300 16px Montserrat, Raleway, verdana, sans-serif;
+  font: 400 16px Montserrat, Raleway, verdana, sans-serif;
   color: $font_color;
 }
 
@@ -45,11 +45,16 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
+  }
 
 .col {
   &--25 {
-    width: calc(25% - 15px);
+    width: calc(25% - 45px);
+    flex-shrink: 0;
+  }
+
+  &--33 {
+    width: calc(33.3% - 20px);
     flex-shrink: 0;
   }
 }
@@ -59,7 +64,7 @@ input {
   font-weight: 600;
   color: $dark;
   text-align: center;
-  margin: 0 0 25px;
+  margin: 0 0 18px;
 
    &--left {
     @extend .title-30;
@@ -78,6 +83,7 @@ input {
   text-align: center;
   max-width: 770px;
   margin: 0 auto 35px;
+  line-height: 28px;
 
   &--white {
     @extend .text;
